@@ -28,6 +28,8 @@ function transformStateWithClones(state, actions) {
       case 'clear':
         newState = {};
         break;
+      default:
+        return 'Error! Use correct input and try again!';
     }
 
     result.push(newState);
